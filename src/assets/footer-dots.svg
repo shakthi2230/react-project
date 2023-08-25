@@ -1,0 +1,28 @@
+var _path;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgFooterDots(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 502,
+    height: 502,
+    viewBox: "0 0 502 502",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M7.49 207a7.5 7.5 0 1 1 0-14.99 7.5 7.5 0 0 1 0 14.99Zm487.02 0a7.5 7.5 0 1 1-.02-15 7.5 7.5 0 0 1 .02 15Zm0-103a7.5 7.5 0 1 1-.02-15 7.5 7.5 0 0 1 .02 15Zm0 206a7.5 7.5 0 1 1-.02-15 7.5 7.5 0 0 1 .02 15Zm0 103a7.5 7.5 0 1 1-.02-15 7.5 7.5 0 0 1 .02 15ZM295 7.49a7.5 7.5 0 1 1 14.99 0 7.5 7.5 0 0 1-14.99 0Zm103 0a7.51 7.51 0 0 1 15 0 7.5 7.5 0 1 1-15 0Zm-206 0a7.51 7.51 0 0 1 15 0 7.5 7.5 0 1 1-15 0Zm-103 0a7.5 7.5 0 1 1 14.99 0A7.5 7.5 0 0 1 89 7.5Zm206 487.02a7.5 7.5 0 1 1 15-.02 7.5 7.5 0 0 1-15 .02Zm103 0a7.5 7.5 0 1 1 15-.02 7.5 7.5 0 0 1-15 .02Zm-206 0a7.5 7.5 0 1 1 15-.02 7.5 7.5 0 0 1-15 .02Zm-103 0a7.5 7.5 0 1 1 15-.02 7.5 7.5 0 0 1-15 .02ZM7.49 104a7.51 7.51 0 0 1 0-15 7.5 7.5 0 1 1 0 15Zm0 206a7.51 7.51 0 0 1 0-15 7.5 7.5 0 1 1 0 15Zm0 103a7.5 7.5 0 1 1 0-14.99 7.5 7.5 0 0 1 0 14.99ZM96 215a15 15 0 1 1 0-30 15 15 0 0 1 0 30Zm310 0a15 15 0 1 1 0-30 15 15 0 0 1 0 30ZM302 111a15 15 0 1 1 0-30 15 15 0 0 1 0 30Zm0 310a15 15 0 1 1 0-30 15 15 0 0 1 0 30ZM200 111a15 15 0 1 1 0-30 15 15 0 0 1 0 30Zm102.49 111a22.5 22.5 0 1 1 .03-45 22.5 22.5 0 0 1-.03 45Zm-102.98 0a22.5 22.5 0 1 1 0-45.02 22.5 22.5 0 0 1 0 45.02Zm102.98 103a22.5 22.5 0 1 1 .04-45.02 22.5 22.5 0 0 1-.04 45.02Zm-102.98 0a22.51 22.51 0 0 1 0-45 22.5 22.5 0 0 1 0 45Zm.49 96a15 15 0 1 1 0-30 15 15 0 0 1 0 30ZM96.49 104a7.5 7.5 0 1 1 .02-15 7.5 7.5 0 0 1-.02 15Zm309.02 0a7.5 7.5 0 1 1-.02-15 7.5 7.5 0 0 1 .02 15ZM96 317a15 15 0 1 1 0-30 15 15 0 0 1 0 30Zm310 0a15 15 0 1 1 0-30 15 15 0 0 1 0 30ZM96.49 413a7.5 7.5 0 1 1 .02-15 7.5 7.5 0 0 1-.02 15Zm309.02 0a7.5 7.5 0 1 1-.02-15 7.5 7.5 0 0 1 .02 15Z",
+    fill: "#DEE0FF",
+    fillRule: "evenodd"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgFooterDots);
+export default __webpack_public_path__ + "static/media/footer-dots.b67bb3cf6e0e2cdc234898f4fa370518.svg";
+export { ForwardRef as ReactComponent };

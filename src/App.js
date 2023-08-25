@@ -1,11 +1,16 @@
 import React from 'react'
-import Header from './components/Header';
+import  Home  from './components/Home';
+import Page2 from './components/Page2';
 import './App.css';
 
 const App = () => {
   return (
     <div>
-      <Header/>
+      <div><Home/></div>
+    
+      <div> <Page2/> </div>
+      
+     
     </div>
   )
 }

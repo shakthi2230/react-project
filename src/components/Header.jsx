@@ -9,10 +9,10 @@ function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary p-4">
       <Container fluid>
-        <Navbar.Brand href="#home" className='font-style-bold'>LOGOIPUSIM</Navbar.Brand>
+        <Navbar.Brand href="#home" className='font-style-bold fw-bold'><h1>LOGOIPUSIM</h1></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto d-flex  content-align">
+          <Nav className="me-auto d-flex  content-align fw-bold">
           <NavDropdown title="Services" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
