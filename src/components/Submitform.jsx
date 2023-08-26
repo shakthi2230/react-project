@@ -1,66 +1,94 @@
-
-
 import React, { useState } from 'react';
-import { Form, Button , ListGroup } from 'react-bootstrap';
+import { Container, Form, Button } from 'react-bootstrap';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
+import Fromicon from '../assets/formicons.PNG';
+import Agency from '../assets/agencyicon.PNG';
 
 const Submitform = () => {
   const [name, setName] = useState('');
-  const [mobileNumber, setMobileNumber] = useState('');
+  const [phone, setPhone] = useState('');
+
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
+
+  const handlePhoneChange = (e) => {
+    setPhone(e.target.value);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Process form submission logic here
     console.log('Name:', name);
-    console.log('Mobile Number:', mobileNumber);
-    // You can perform further actions or API calls here
+    console.log('Phone:', phone);
   };
 
   return (
-    <div className='p-5 max-width=50 pt-5 '>
-      <Form onSubmit={handleSubmit}>
-      <h5>Get a Quote from our experts.</h5>
-      <p className='col-9'>Find the services you need and receive quotes
-        from our team of Specialists.</p>
+    <div className="shadow-lg container mt-5 pt-3  rounded">
+      
+      <h2 className="overlay-heading">Get a Quote from our experts.</h2>
+        <p>Find the services you need and receive quotes from our team of Specialists.</p>
+        <Form onSubmit={handleSubmit}>
+        <div className="form-group mb-4">
+                 
+                  <select className="form-control" name="helpDropdown" >
+                    <option value="">Select an option</option>
+                    <option value="Managed Services">Search Services</option>
+                    <option value="IT Consulting & Advisory">IT Consulting & Advisory</option>
+                    <option value="Cyber Security">Cyber Security</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Mobile Development">Mobile Development</option>
+                    <option value="Other">Other</option>
+                  </select>
 
-      <Form.Group className="mb-3 shadow-sm">
-        {/* <Form.Label>Name</Form.Label> */}
-        <Form.Control
-          type="text"
-          placeholder="Search Services"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-      </Form.Group>
+                </div>
 
-      <Form.Group className="mb-3 shadow-sm">
-        {/* <Form.Label>Mobile Number</Form.Label> */}
-        <Form.Control
-          type="tel"
-          placeholder="Enter your mobile number"
-          value={mobileNumber}
-          onChange={(e) => setMobileNumber(e.target.value)}
-        />
-      </Form.Group>
+                <div className="form-row mb-3">
+                  {/* <label htmlFor="phone">Phone </label> */}
+                  <PhoneInput
+                  country={"in"}
+                    placeholder="Enter phone number"
+                   />
+                </div>
+
+          <Button variant="dark" type="submit" className="submit-button p-3 mb-4">
+            Submit
+          </Button>
+
+        <div className="inline-list d-flex justify-content-around p-4">
+           
+            <div className="list-item d-flex  mr-4 ">
+                  <img src={Fromicon} alt="Image 1" />
+                
+            </div>
+            <div className="vertical-line"></div>
+            <div className="list-item d-flex  mr-4">
+              <img src={Agency} alt="Image 2" />
+              
+            </div>
+        </div>
+        {/* <div className="icon-container text-center d-flex align-items-around">
+            <div className="icon-with-text d-flex align-items-around">
+              <i className="bi bi-building"></i>
+              <strong className="bold-number">1000</strong>
+              <p>Clients</p>
+              <div className="vertical-line">|</div>
+            </div>
+            <div className="icon-with-text d-flex align-items-around">
+              <div className="vertical-line"></div>
+              <i className="bi bi-person"></i>
+              <strong className="bold-number">1000</strong>
+              <p>Agencies</p>
+            </div>
+        </div> */}
+
+        </Form>
 
       
-      <div  className="d-grid gap-2">
-      <Button variant="dark" size="">
-        Block level button
-      </Button>
-      </div>
-      <ListGroup horizontal className="list-inline d-flex justify-content-around  mt-4 border-none">
-      <ListGroup.Item>
-      <h3>1000</h3>      
-      <p>Clients</p> 
-      </ListGroup.Item>
-      <ListGroup.Item>
-      <h3>1000</h3>      
-      <p>Clients</p> 
-      </ListGroup.Item>
-    </ListGroup>
-     
-    </Form>
     </div>
   );
 };
 
 export default Submitform;
+

@@ -7,7 +7,9 @@ import Button from 'react-bootstrap/Button';
 
 function Header() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary p-4">
+    <div className='container-fluid'>
+    
+      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary p-4">
       <Container fluid>
         <Navbar.Brand href="#home" className='font-style-bold fw-bold'><h1>LOGOIPUSIM</h1></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -69,6 +71,7 @@ function Header() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </div>
   );
 }
 
