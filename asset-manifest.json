@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/react-project/static/css/main.68fc1176.css",
+    "main.js": "/react-project/static/js/main.27752458.js",
+    "static/media/kisspng.png": "/react-project/static/media/kisspng.bf38f39a0455975e3e88.png",
+    "static/media/Image2.JPG": "/react-project/static/media/Image2.1f86f9cc3fea9ec571d7.JPG",
+    "static/media/Mobile.JPG": "/react-project/static/media/Mobile.77f5ec7ea691f632a456.JPG",
+    "static/media/Consulting.JPG": "/react-project/static/media/Consulting.a2cb2e651ffe443a4266.JPG",
+    "static/media/Cloud.JPG": "/react-project/static/media/Cloud.d3d3634b808d94c20e17.JPG",
+    "static/media/Cyber.JPG": "/react-project/static/media/Cyber.6e904ac1c261b5d01175.JPG",
+    "static/media/Web.JPG": "/react-project/static/media/Web.7f3b3ec5ad14caf37539.JPG",
+    "static/media/Cost-effectivenesss.png": "/react-project/static/media/Cost-effectivenesss.ceb11e7df000437833f2.png",
+    "static/media/Innovativee.png": "/react-project/static/media/Innovativee.65df5df854eda9c8c390.png",
+    "static/media/industry1.webp": "/react-project/static/media/industry1.baa094963353bbc5f679.webp",
+    "static/media/undergroup-1024x743.jpg": "/react-project/static/media/undergroup-1024x743.fc414352e68399d40fd2.jpg",
+    "static/media/pngfind.webp": "/react-project/static/media/pngfind.13637a2a42f0502c6996.webp",
+    "static/media/industry2.webp": "/react-project/static/media/industry2.65887e1ca6027f32e0b1.webp",
+    "static/media/industry6.webp": "/react-project/static/media/industry6.299ca345583cf63b0372.webp",
+    "static/media/industry3.webp": "/react-project/static/media/industry3.6436c067682808f5219e.webp",
+    "static/media/industry4.webp": "/react-project/static/media/industry4.e187ebace3e0a804e9d4.webp",
+    "static/media/industry5.webp": "/react-project/static/media/industry5.4bd038888e9af3f0086b.webp",
+    "static/media/Industryy.PNG": "/react-project/static/media/Industryy.6701dbf7907173b78c42.PNG",
+    "static/media/Scalabilityy.PNG": "/react-project/static/media/Scalabilityy.b677b69ef7735573ac91.PNG",
+    "static/media/acronis-logo2.webp": "/react-project/static/media/acronis-logo2.03f513f8288add00cae5.webp",
+    "static/media/agencyicon.PNG": "/react-project/static/media/agencyicon.451b087e30d25b973e78.PNG",
+    "static/media/clutch-logo.svg": "/react-project/static/media/clutch-logo.651a2b72f9aa9947eec607792e777183.svg",
+    "static/media/formicons.PNG": "/react-project/static/media/formicons.377508313b7f6efbaa0a.PNG",
+    "index.html": "/react-project/index.html",
+    "main.68fc1176.css.map": "/react-project/static/css/main.68fc1176.css.map",
+    "main.27752458.js.map": "/react-project/static/js/main.27752458.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68fc1176.css",
+    "static/js/main.27752458.js"
+  ]
+}
